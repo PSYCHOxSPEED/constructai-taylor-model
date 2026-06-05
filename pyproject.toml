@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "construct-ai-taylor"                 
+version = "0.1.0"                    
+description = "Embedding model TAYLOR from Construct AI"
+readme = "README.md"
+license = {text = "Apache 2.0"}             
+authors = [{name = "constructai"}]
+dependencies = [                            
+    "torch>=2.0.0",
+    "transformers>=4.30.0",
+    "huggingface_hub>=0.20.0",
+    "numpy"
+]
+requires-python = ">=3.9"
+
+[project.urls]
+"Homepage" = "https://huggingface.co/constructai/taylor-m1-38m-128"
